@@ -1,11 +1,12 @@
 @import '../variables';
+@import '../mixins';
 
 .header {
   display: flex;
   justify-content: space-between;
 
   &__img {
-    width: 80%;
+    width: 100%;
     height: auto;
   }
 
@@ -23,6 +24,22 @@
     &:hover,
     &.active {
       text-decoration-line: underline;
+    }
+
+    @include media(tablet) {
+      padding-left: 4rem;
+      font-size: 22px;
+    }
+
+    @include media(small-tablet) {
+      padding-left: 3rem;
+      font-size: 20px;
+    }
+
+    @include media(mobile) {
+      padding-left: 2rem;
+      font-size: 15px;
+      text-transform: uppercase;
     }
   }
 }

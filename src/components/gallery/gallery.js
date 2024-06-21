@@ -4,7 +4,7 @@ import Card from "../card/card";
 
 const Gallery = () => {
     return (
-      <div className="gallery">
+      <section className="gallery">
         {logements.map((logement) => (
           <article key={logement.id}>
             <Link to={`/location/${logement.id}`}>
@@ -12,7 +12,7 @@ const Gallery = () => {
             </Link>
           </article>
         ))}
-      </div>
+      </section>
     );
   };
 
