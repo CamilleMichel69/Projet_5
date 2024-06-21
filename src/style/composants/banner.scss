@@ -1,0 +1,9 @@
+@import '../mixins';
+
+.banner-home {
+    @include banner('../../images/Banner_home.png', 0.6);
+}
+
+.banner-about {
+    @include banner('../../images/Banner_about.png', 0.3);
+}

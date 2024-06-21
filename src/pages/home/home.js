@@ -1,8 +1,12 @@
+import Banner from "../../components/banner_home/banner";
+import Gallery from "../../components/gallery/gallery";
+
 function Home() {
     return (
-      <div>
-        <h1> Hello 🏠</h1>
-      </div>
+      <main>
+        <Banner />
+        <Gallery />
+      </main>
     )
   }
   

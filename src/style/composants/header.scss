@@ -1,0 +1,28 @@
+@import '../variables';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  &__img {
+    width: 80%;
+    height: auto;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+
+  &__navlink {
+    color: $primary-color;
+    text-decoration: none;
+    padding-left: 5rem;
+    font-size: 25px;
+
+    &:hover,
+    &.active {
+      text-decoration-line: underline;
+    }
+  }
+}

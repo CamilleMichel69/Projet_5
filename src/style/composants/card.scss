@@ -1,0 +1,60 @@
+@import '../variables';
+@import '../mixins';
+
+.card {
+    @include widthHeight;
+    position: relative;
+    border-radius: 10px;
+    animation: fadeInUp 800ms ease-in-out;
+  
+    &__img {
+      width: inherit;
+      height: inherit;
+      object-fit: cover;
+      border-radius: inherit;
+      transition: transform 0.3s ease;
+    }
+  
+    &__title {
+      position: absolute;
+      bottom: 0;
+      margin: 15px 20px;
+      color: $title-color;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      box-sizing: inherit;
+      font-size: 1rem;
+      font-weight: 400;
+      z-index: 2;
+    }
+  
+    &__overlay {
+      position: absolute;
+      top: 0;
+      @include widthHeight;
+      border-radius: inherit;
+      background: linear-gradient(rgba(255, 255, 255, 0) 0%, #00000080);
+      transition: transform 0.3s ease; 
+      z-index: 1;
+    }
+  
+    &:hover {
+      .card__img {
+        transform: scale(1.03);
+      }
+      .card__overlay {
+        transform: scale(1.03); 
+      }
+    }
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(15px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

@@ -1,8 +1,13 @@
+import logo from "../../images/LOGO_Footer.png"
+
 function Footer() {
   return (
-    <div>
-        <h1>footer</h1>
-    </div>
+    <footer className="footer">
+      <img src={logo} alt="logo de l'agence Kasa" />
+      <p className="footer__text">
+        © 2020 Kasa. All rights reserved
+      </p>
+    </footer>
   )
 }
 
