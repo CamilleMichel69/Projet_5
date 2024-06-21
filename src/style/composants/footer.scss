@@ -6,7 +6,7 @@
   background-color: $primary-color;
   padding: 40px 0 20px;
 
-  .footer__text {
+  &__text {
     color: $title-color;
     margin-top: 25px;
     font-size: 20px;
@@ -14,7 +14,7 @@
 
   @include media(mobile) {
     padding-bottom: 40px;
-    .footer__text {
+    &__text {
       margin-top: 10px;
       font-size: 13px;
       padding: 0 180px;
