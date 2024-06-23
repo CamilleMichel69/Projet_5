@@ -1,0 +1,60 @@
+@import '../variables';
+@import '../mixins';
+
+.error {
+    text-align: center;
+
+    &__number {
+        font-family: 'Montserrat';
+        font-weight: bold;
+        font-size: 300px;
+        line-height: 110%;
+        color: $main-color;
+    }
+
+    &__text {
+        font-size: 30px;
+        color: $main-color;
+    }
+
+    &__linkContainer {
+        margin: 80px 0;
+    }
+
+    &__link {
+        color: $primary-color;
+    }
+
+    // Media queries
+    @include media(tablet) {
+        &__number {
+            font-size: 200px;
+        }
+
+        &__text {
+            font-size: 25px;
+        }
+
+        &__linkContainer {
+            margin: 60px 0;
+        }
+    }
+
+    @include media(mobile) {
+        &__number {
+            font-size: 150px;
+            margin: 60px;
+        }
+
+        &__text {
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__linkContainer {
+            margin: 80px 0;
+        }
+    }
+}
+
