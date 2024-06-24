@@ -12,11 +12,12 @@ function Collapse({ title, content }) {
 
   return (
     <section className={`collapse ${isOpen ? 'open' : ''}`}>
-      <div className='collapse__title' onClick={toggleCollapse}>
+      <div className='collapse__title'>
         <span>{title}</span>
         <FontAwesomeIcon
           icon={faChevronUp}
           className={`arrow ${isOpen ? 'rotate-down' : ''}`}
+          onClick={toggleCollapse}
         />
       </div>
       <div className='collapse__content'>

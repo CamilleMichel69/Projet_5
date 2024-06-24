@@ -48,8 +48,7 @@
 
         &__text {
             font-size: 20px;
-            display: flex;
-            flex-direction: column;
+            @include flex-column;
         }
 
         &__linkContainer {

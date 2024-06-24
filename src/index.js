@@ -13,6 +13,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Router>
+    <div className="wrapper">
       <Header />
       <Routes>
           <Route path="/" element={<Home />} />
@@ -21,6 +22,7 @@ root.render(
           <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
+      </div>
     </Router>
   </React.StrictMode>
 )

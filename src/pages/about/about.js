@@ -1,4 +1,3 @@
-import React from 'react';
 import Banner from '../../components/banner_about/banner';
 import Collapse from '../../components/collapse/collapse';
 import datas from '../../datas/collapse.json'; 

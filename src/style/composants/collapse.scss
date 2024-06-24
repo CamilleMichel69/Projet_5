@@ -37,7 +37,7 @@
     opacity: 0;
     overflow: hidden;
     transition: max-height 0s ease, opacity 0.5s ease, padding 0.5s ease;
-    @include fadeInUp(300ms, ease-in-out);
+    @include fadeInUp;
   }
   
   &.open {

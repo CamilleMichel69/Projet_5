@@ -7,19 +7,32 @@
   box-sizing: border-box;
   font-family: $font-stack;
 }
+
+body {
+  @include flex-column;
+}
+
+.wrapper {
+  @include flex-column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
   
 header, main {
-  margin: 40px 80px;
+  margin: 40px 80px 0;
 
   @include media(tablet) { // Pour les tablettes
-    margin: 30px 60px;
+    margin: 30px 60px 0;
   }
 
   @include media(small-tablet) { // Pour les petits écrans de tablette
-    margin: 20px 40px;
+    margin: 20px 40px 0;
   }
 
   @include media(mobile) { // Pour les mobiles
-    margin: 20px 20px;
+    margin: 20px 20px 0;
   }
 }
