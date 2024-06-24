@@ -1,0 +1,17 @@
+@import '../mixins';
+@import '../variables';
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+  
+    &__item {
+      background-color: $main-color;
+      border-radius: $b-radius-little;
+      padding: 0.5em 1em;
+      font-size: 0.875em;
+      color: $title-color;
+    }
+  }
+  

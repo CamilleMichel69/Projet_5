@@ -14,7 +14,7 @@
     font-weight: bold;
     font-size: 1.5rem;
     text-align: left;
-    border-radius: 5px;
+    border-radius: $b-radius-little;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,6 +38,10 @@
     overflow: hidden;
     transition: max-height 0s ease, opacity 0.5s ease, padding 0.5s ease;
     @include fadeInUp;
+
+    ul {
+      list-style-type: none;
+    }
   }
   
   &.open {

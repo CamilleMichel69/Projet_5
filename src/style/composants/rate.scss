@@ -1,0 +1,21 @@
+@import '../mixins';
+@import '../variables';
+
+.rating {
+  display: flex;
+  gap: 1em;
+  
+  .rating__star {
+    font-size: 1.5em;
+  
+    &--full {
+      color: $main-color; 
+    }
+  
+    &--empty {
+      color: #e0e0e0; 
+    }
+  }
+}
+  
+  

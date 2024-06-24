@@ -21,7 +21,15 @@ function Collapse({ title, content }) {
         />
       </div>
       <div className='collapse__content'>
-        {content}
+        {Array.isArray(content) ? (
+          <ul>
+            {content.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+        ) : (
+          <p>{content}</p>
+        )}
       </div>
     </section>
   );
