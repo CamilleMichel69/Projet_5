@@ -53,9 +53,9 @@
 
 .banner-home {
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
-  @include banner('../../images/Banner_home.png', 0.6);
+  @include banner('../../images/Banner_home.jpg', 0.6);
 }
 
 .banner-about {
-  @include banner('../../images/Banner_about.png', 0.3);
+  @include banner('../../images/Banner_about.jpg', 0.3);
 }
