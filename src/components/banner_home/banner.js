@@ -1,5 +1,3 @@
-import '../../style/composants/banner.scss';
-
 function Banner() {
   return (
     <section className="banner-home">

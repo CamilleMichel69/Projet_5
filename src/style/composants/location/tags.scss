@@ -1,0 +1,29 @@
+@import '../../utils/variables';
+@import '../../utils/mixins';
+
+.tags {
+    display: flex;
+    gap: 0.5em;
+    margin-top: 20px;
+  
+    &__item {
+      background-color: $main-color;
+      border-radius: $b-radius-little;
+      padding: 0.3em 0.7em;
+      font-size: 0.9em;
+      color: $title-color;
+      width: 150px;
+      text-align: center;
+    }
+
+    @include media(mobile) {
+      margin-top: 15px;   
+      
+      &__item {
+        font-size: 0.8em;
+        border-radius: 5px;
+        width: 125px;
+      }
+    }
+  }
+  

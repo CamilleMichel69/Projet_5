@@ -1,5 +1,5 @@
-@import '../variables';
-@import '../mixins';
+@import '../utils/variables';
+@import '../utils/mixins';
 
 @mixin banner($background-url, $overlay-opacity) {
   width: 100%;

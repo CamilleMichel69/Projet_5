@@ -1,5 +1,3 @@
-import '../../../style/composants/tags.scss';
-
 function Tags({ tags }) {
   return (
     <div className="tags">

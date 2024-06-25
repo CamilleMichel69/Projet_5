@@ -1,0 +1,32 @@
+@import '../../utils/variables';
+@import '../../utils/mixins';
+
+.rating {
+  display: flex;
+  gap: 0.8em;
+  margin-top: 25px;
+  
+  .rating__star {
+    font-size: 1.5em;
+  
+    &--full {
+      color: $main-color; 
+    }
+  
+    &--empty {
+      color: #e0e0e0; 
+    }
+  }
+
+  @include media(mobile) {
+    margin-top: 0;   
+    gap: 0.5em;
+
+    .rating__star {
+      font-size: 1em;
+    }
+    
+  }
+}
+  
+  

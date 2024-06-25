@@ -1,5 +1,3 @@
-import '../../../style/composants/host.scss';
-
 function Host({ name, picture }) {
   return (
     <div className="host">

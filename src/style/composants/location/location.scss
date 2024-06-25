@@ -1,0 +1,71 @@
+@import '../../utils/variables';
+@import '../../utils/mixins';
+
+.location__details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 30px 0;
+    @include fadeInUp;
+
+    h1 {
+        color: $main-color;
+        font-weight: normal;
+    }
+    
+    h2 {
+        font-weight: normal;
+        font-size: 1.1em;
+        margin: 7px 0;
+    }
+    
+
+    .collapse {
+        margin: 0 0 20px;
+        width: 47%;
+
+        &__title {
+            font-size: 1.2em;
+            padding: 10px;
+        }
+
+        &__content {
+            font-size: 1.1rem;
+        }
+    }
+
+    @include media(mobile) {
+        flex-direction: column;
+        margin: 10px 0;
+
+        h1 {
+            font-size: 1.5em;
+        }
+
+        h2 {
+            font-size: 1em;
+        }
+
+        .location__hostRate {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+            margin: 15px 0;
+        }
+
+        .collapse {
+            width: 100%;
+
+            &__title {
+                font-size: 0.9em;
+                border-radius: 5px;
+            }
+    
+            &__content {
+                font-size: 0.9em;
+            }
+        }
+    }
+}
