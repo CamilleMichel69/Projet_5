@@ -5,27 +5,19 @@
   display: flex;
   gap: 0.8em;
   margin-top: 25px;
-  
+
   .rating__star {
-    font-size: 1.5em;
-  
-    &--full {
-      color: $main-color; 
-    }
-  
-    &--empty {
-      color: #e0e0e0; 
-    }
+    width: 1.5em;
+    height: 1.5em;
   }
 
   @include media(mobile) {
-    margin-top: 0;   
+    margin-top: 0;
     gap: 0.5em;
 
     .rating__star {
-      font-size: 1em;
+      width: 1em;
+      height: 1em;
     }
   }
 }
-  
-  

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
+import highArrow from '../../images/arrow_down.png';
 
 function Collapse({ title, content }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,9 +12,10 @@ function Collapse({ title, content }) {
     <section className={`collapse ${isOpen ? 'open' : ''}`}>
       <div className='collapse__title'>
         <span>{title}</span>
-        <FontAwesomeIcon
-          icon={faChevronUp}
-          className={`arrow ${isOpen ? 'rotate-down' : ''}`}
+        <img 
+          src={highArrow} 
+          className={`arrow ${isOpen ? '' : 'rotate-down'}`} 
+          alt="Toggle Collapse"
           onClick={toggleCollapse}
         />
       </div>
