@@ -37,14 +37,13 @@
     height: 120px;
     border-radius: $b-radius-little;
     .banner_text {
-      font-size: 2em;
+      font-size: 1.9em;
     }
   }
   
   @include media(mobile) { 
     box-shadow: none;
     .banner_text {
-      font-size: 2em;
       width: 60%;
       left: 8%; 
     }

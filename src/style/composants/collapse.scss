@@ -38,7 +38,7 @@
     max-height: 0;
     opacity: 0;
     overflow: hidden;
-    transition: max-height 0s ease, opacity 0.5s ease, padding 0.5s ease;
+    transition: max-height 2s ease, opacity 2s ease, padding 2s ease;
     @include fadeInUp;
 
     ul {
@@ -60,6 +60,10 @@
     &__title {
       padding: 10px;
       font-size: 1.2rem;
+
+      .arrow {
+        height: 30px;
+      }
     }
 
     &__content {
